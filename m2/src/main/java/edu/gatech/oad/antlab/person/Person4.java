@@ -5,11 +5,12 @@ package edu.gatech.oad.antlab.person;
  *  returns their name and a
  *  modified string 
  *  
- *  @author Bob
- *  @version 1.1
+ *  @author Ashima
+ *  @version 1.2
  */
 public class Person4 {
   /** Holds the persons real name */
+
   private String name;
     /**
      * The constructor, takes in the persons
@@ -30,8 +31,22 @@ public class Person4 {
      * @return the modified string
      */
     private String calc(String input) {
-      //Person 4 put your implementation here
-      return null;
+        int size = input.length();
+        char[] a = new char[size];
+        char temp = 'a';
+        int pos = 0;
+        int t = 0;
+
+        while (t < size) {
+            temp = input.charAt(t);
+            temp = (char)(temp + 1);
+            a[pos] = temp;
+            pos++;
+            t++;
+        }
+
+      String end = new String(a);
+      return end;
     }
     
     /**
