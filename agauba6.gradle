@@ -2,7 +2,7 @@ defaultTasks 'jar'
 apply plugin: 'java'
 
 dependencies {
-    compile files('lib.resources.jar')
+    compile files('lib/resources.jar')
 
 jar {
     manifest {
